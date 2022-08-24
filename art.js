@@ -24,7 +24,7 @@ export class Art {
 
         convolver.connect(this.audioContext.destination);
 
-        this.output.gain.linearRampToValueAtTime(randomBetween(0.05, 0.1), this.audioContext.currentTime + randomBetween(0, 1))
+        this.output.gain.linearRampToValueAtTime(randomBetween(0.09, 0.2), this.audioContext.currentTime + randomBetween(0, 1))
 
         this.notes = [
             { q: 261.63, color: 'rgba(97, 7, 181, 1)', r: [97, 7, 181] },
